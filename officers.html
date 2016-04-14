@@ -1,36 +1,265 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-	<title>ACM@WM</title>
+  <title>ACM@WM</title>
 
   <link href="assets/css/bootstrap.css" rel="stylesheet">
-	<link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
 
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.js"></script>
-
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
-  <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+  <link href='assets/fonts/roboto_thin_macroman/stylesheet.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 </head>
 
-<body ng-app>
+<body>
 
-	<!-- Fancy angular just lets us include the menu bar and logo without copy pasting everywhere -->
-  <ng-include src="'menu.html'"></ng-include>
+  <div id="wrapper">
 
-	<h2>Meet the Exec Board</h2>
+    <div id="header">
 
-  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-	
+      <!--Puts logo into Bootstrap grid so that it properly resizes across devices-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4"><a href="home.html"><img src="assets/img/logo.png" alt="ACM@WM Logo"></a></div>
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4"></div>
+        </div>
+      </div>
+
+      <!-- Static navbar -->
+      <!-- HTML for the navigation bar - will collapse into a dropdown button on small screens-->
+      <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="membership.html">Membership</a></li>
+              <li><a href="calendar.html">Events</a></li>
+              <li><a href="officers.html">Officers</a></li>
+              <li><a href="http://www.tribehacks.com/">tribeHacks</a><li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+    </div>
+
+
+    <div id="body">
+
+        <h2>Officers</h2>
+
+        <div class="row">
+
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+
+          <!-- Grid of Pictures, one row per exec board member, includes photo, title and a quick biography-->
+          <!-- Order of exec board members is derived from the order in which the members are listed in Article 4, Sect 1 of Constitution-->
+          <!-- Should only need to edit names, biography paragraph, links to personal sites/githubs, and image sources-->
+
+          <div class="row picGrid">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><img src="assets/img/officers/nate.jpeg"></div>
+            <div class="col-md-6 officer-description">
+
+              <h4>Nathan Owen / <i>Chairman</i></h4>
+
+              <hr>
+
+              <p>Nate Owen is a Computer Science and Mathematics Major that is excited to present the ACM to the William and Mary community after a decade of dormancy. He loves programming, considers heroku black magic, and is Drum Corps aficionado. You can read more about Nate and his passions on his <a href="http://nateo.co" target="_blank">website</a>, or perhaps pass unforgiving judgement on his code on <a href="http://github.com/newOnahtaN" target="_blank">github</a>.</p>
+
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+
+          <div class="row picGrid">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><img src="assets/img/officers/divya.JPG"></div>
+            <div class="col-md-6 officer-description">
+
+              <h4>Divya Bathey / <i>Vice Chairman</i></h4>
+
+              <hr>
+
+              <p>Divya Bathey is a senior at the College majoring in Computer Science and Biology. She spends her free time pursing research and hunting for good cupcakes.</p>
+
+            </div>
+            <div class="col-md-2"></div>
+
+          </div>
+
+          <div class="row picGrid">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><img src="assets/img/officers/kevin.png"></div>
+            <div class="col-md-6 officer-description">
+
+              <h4>Kevin Moran / <i>Secretary &amp; Graduate Liason</i></h4>
+
+              <hr>
+
+              <p>Kevin P. Moran is currently a graduate student in the Computer Science Department at the College of William and Mary pursuing a Ph.D degree.  He graduated with a B.S. in Physics and Computer Science from the College of the Holy Cross in 2013, and an M.S. in Computer Science from the College of William and Mary in 2015.  He is currently a member of the <a href="http://www.cs.wm.edu/semeru/" target="_blank">SEMERU</a> research group and advised by <a href="http://www.cs.wm.edu/~denys/index.html" target="_blank">Dr. Denys Poshyvanyk</a>. His main research interest involves facilitating the processes of Software Engineering, Maintenance, and Evolution with a focus on mobile devices. Kevin is also an accomplished oarsmen with over ten years of experience rowing and coaching. For more info visit Kevin’s <a href="http://www.kpmoran.com/" target="_blank">webpage</a>.</p>
+
+            </div>
+            <div class="col-md-2"></div>
+
+          </div>
+
+          <div class="row picGrid">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><img src="assets/img/officers/jacob.jpg"></div>
+            <div class="col-md-6 officer-description">
+
+              <h4>Jacob Lisi / <i>Treasurer</i></h4>
+
+              <hr>
+
+              <p>Jacob Lisi is a senior who is currently studying computer science and chemistry at the College of William and Mary. He plans on pursuing a career in software engineering after graduation. He counts among his interests 3d printing and reading books on history.</p>
+
+
+            </div>
+            <div class="col-md-2"></div>
+
+          </div>
+
+          <div class="row picGrid">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><img src="assets/img/officers/alexina.jpg"></div>
+            <div class="col-md-6 officer-description">
+
+              <h4>Alexina Haefner / <i>Public Relations Chair</i></h4>
+
+              <hr>
+
+              <p>Alexina is a freshman computer science major and judaic studies minor. Outside of computer science she enjoys robotics (and is currently part of a team working on a robot with NASA), The X Files, and cooking. As PR chair she hopes to help ACM grow and become a solid presence on campus for computer science students. This summer she will be working at IDEAMATICS Inc. </p>
+
+            </div>
+            <div class="col-md-2"></div>
+
+          </div>
+
+          <div class="row picGrid">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><img src="assets/img/officers/eryn.jpg"></div>
+            <div class="col-md-6 officer-description">
+
+              <h4>Eryn Sawyer / <i>Webmaster</i></h4>
+
+              <hr>
+
+              <p>Eryn is a junior at the College, studying computer science and mathematics. She currently works as a research assistant at AidData and is looking forward to interning with Salesforce in San Francisco this summer. Besides web stuff, she’s interested in mobile development, particularly iOS. When not doing computer-y things, she is an active brother of Phi Sigma Pi and an avid baker. To learn more about her, see her <a href="http://erynsawyer.com" target="_blank">website</a>.</p>
+
+            </div>
+            <div class="col-md-2"></div>
+
+          </div>
+
+          <div class="row picGrid">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><img src="assets/img/officers/uli.png"></div>
+            <div class="col-md-6 officer-description">
+
+              <h4>Ulises Giacoman / <i>Hack Committee Chair</i></h4>
+
+              <hr>
+
+              <p>Ulises is a graduating senior who loves listening to and sharing ideas. He frequents hackathons and enjoys working on web and iOS apps in his free time. As Hack Chair, Ulises handles the weekly newsletter as well as coordinates all TribeHacks related events. The newsletter provides updates to the community on the latest tech and product developments in the community.</p> 
+              <p>Check out his projects at <a href="http://udiscover.me" target="_blank">udiscover.me</a></p>
+
+            </div>
+            <div class="col-md-2"></div>
+
+          </div>
+
+          <div class="row picGrid">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><img src="assets/img/officers/will.jpg"></div>
+            <div class="col-md-6 officer-description">
+
+              <h4>Will Theuer / <i>Interview Preparation Chair</i></h4>
+
+              <hr>
+
+              <p>Will Theuer (Interview Preparation Chair) is a Computer Science and Linguistics major. He enjoys learning about human languages as much as programming languages and is interested in projects relating to Natural Language Processing. In is free time, Will enjoys singing with groups like the Gentlemen of the College and the Botetourt Chamber Singers. He hopes to make William & Mary CS majors more competitive candidates for technical roles through interview preparation. Check out his github <a href="http://github.com/watheuer" target="_blank">here</a>.</p>
+
+            </div>
+            <div class="col-md-2"></div>
+
+          </div>
+
+          <div class="row picGrid">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><img src="assets/img/officers/jim.jpg"></div>
+            <div class="col-md-6 officer-description">
+
+              <h4>Jim Deverick / <i>Faculty Advisor</i></h4>
+
+            </div>
+            <div class="col-md-2"></div>
+
+          </div>
+
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+    </div>
+
+    <div id="footer">
+
+      <div class="row links">
+
+         <div class="col-sm-6 socialmedia" id="paypal">
+
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="KHZGYQZUT79DW">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            </form>
+
+          </div>
+           
+          <div class="col-sm-6 socialmedia" id="icons">
+
+              <a href="https://www.facebook.com/ACMWM"><i class="fa fa-facebook-official fa-3x"></i></a>
+              <a href="https://www.youtube.com/channel/UCnfKbq9c78huqulztQDs_dA"><i class="fa fa-youtube fa-3x"></i></a>
+            
+          </div>
+
+        </div>
+
+        <div class="row copyright">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+      
+            <p>&copy; 2016 William &amp; Mary ACM</p>
+
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+
+    </div>
+  </div>
+  
 </body>
 
 </html>
