@@ -1,36 +1,140 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-	<title>ACM@WM</title>
+  <title>ACM@WM</title>
 
   <link href="assets/css/bootstrap.css" rel="stylesheet">
-	<link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
 
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.js"></script>
-
   <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
-  <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+  <link href='assets/fonts/roboto_thin_macroman/stylesheet.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
-<body ng-app>
+<body>
 
-  <!-- Fancy angular just lets us include the menu bar and logo without copy pasting everywhere -->
-  <ng-include src="'menu.html'"></ng-include>
+  <div id="wrapper">
 
-	<h2>How To Join</h2>
+    <div id="header">
 
-  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-	
+      <!--Puts logo into Bootstrap grid so that it properly resizes across devices-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4"><a href="home.html"><img src="assets/img/logo.png" alt="ACM@WM Logo"></a></div>
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4"></div>
+        </div>
+      </div>
+
+      <!-- Static navbar -->
+      <!-- HTML for the navigation bar - will collapse into a dropdown button on small screens-->
+      <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="membership.html">Membership</a></li>
+              <li><a href="calendar.html">Events</a></li>
+              <li><a href="officers.html">Officers</a></li>
+              <li><a href="http://www.tribehacks.com/">tribeHacks</a><li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+    </div>
+
+    <div id="body">
+
+      <div class="row">
+
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6">
+
+          <h2>How To Join</h2>
+
+            <div class="genText">
+
+              <p>Membership in the ACM is open to anyone with an interest in computing. We encourage you to come to whatever events interest you! Currently, there are no dues required to be a member of the W&amp;M Chapter.</p>
+
+              <p>Membership in the national ACM is also encouraged. Student memberships are only $19 (this goes up considerably once you graduate) and provide a wide range of benefits - find more information <a href="http://www.acm.org/membership/student/" target='_blank'>here</a>. All officers are required to maintain membership in the national chapter.</p>
+
+
+              <br>
+
+
+              <iframe src="https://docs.google.com/forms/d/13a_ap8p8Ev_78z_NXxaykjWGg8BeCag1N5-rOXFHE28/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3"></div>
+
+      </div>
+
+      </div>
+
+    </div>
+
+   <div id="footer">
+
+      <div class="row links">
+
+         <div class="col-sm-6 socialmedia" id="paypal">
+
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="KHZGYQZUT79DW">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            </form>
+
+          </div> 
+           
+          <div class="col-sm-6 socialmedia" id="icons">
+
+              <a href="https://www.facebook.com/ACMWM"><i class="fa fa-facebook-official fa-3x"></i></a>
+              <a href="https://www.youtube.com/channel/UCnfKbq9c78huqulztQDs_dA"><i class="fa fa-youtube fa-3x"></i></a>
+            
+
+          </div>
+
+        </div>
+
+        <div class="row copyright">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+
+            
+            <p>&copy; 2016 William &amp; Mary ACM</p>
+
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+
+    </div>
+
+  </div> 
+  
 </body>
 
 </html>

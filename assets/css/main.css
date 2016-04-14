@@ -1,51 +1,182 @@
+html{
+	height: 100%;
+}
+
 body{
 	margin: 0px;
+	position: relative;
+	min-height: 100%;
+	font-family: 'robotothin';
 }
 .navbar-inverse {
 	background-color: #115740;
+	margin-bottom: 40px;
 }
 .navbar-inverse .navbar-nav > li > a {
 	color: white;
-	padding-left: 0px;
-	padding-right: 30px;
 }
 .navbar-inverse .navbar-toggle {
 	border-color: transparent;
 }
 .container {
-	padding-bottom: 20px;
-	padding-top: 20px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+div.header {
+	margin-left: 100px;
+}
+p{
+	font-size: 20px;
 }
 img {
 	width: 100%; 
 	height: 100%;
 	margin-left: -8px;
 }
-a{
+.navbar-inverse a{
 	text-decoration: none;
 	color: white;
-	font-family: 'Roboto';
+	font-family: 'robotothin';
 	font-size: 20px;
 }
 h2{
 	text-decoration: none;
 	color: #666666;
-	font-family: 'Roboto';
+	font-family: 'robotothin';
 	font-size: 30px;
 	text-align: center;
-	padding-top: 50px
+	padding-top: 20px
 }
-p{
+h3{
+	color: #666666;
+	font-family: 'robotothin';
+}
+h4{
+	color: #666666;
+	text-align: left;
+	font-family: 'robotothin';
+}
+div.officer-description p{
 	text-decoration: none;
 	color: #666666;
-	font-family: 'Roboto';
+	font-family: 'robotothin';
+	font-size: 15px;
+}
+div.text p{
+	text-decoration: none;
+	color: #666666;
+	font-family: 'robotothin';
 	font-size: 20px;
 	text-align: center;
 	padding-top: 20px;
-	padding-left: 200px;
-	padding-right: 200px;
 }
 #calendar{
 	text-align: center;
 	padding-top: 30px;
+}
+
+div.imgClass:hover {
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+}
+div.imgClass {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+div.title h2 {
+	padding-bottom: 20px
+}
+
+div.picGrid {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+div.officer-description h4{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+div.genText {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+
+}
+
+#logo{
+	text-align: left;
+}
+
+#footer {
+	background-color: #115740;
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin-top: 20px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+#paypal{
+	text-align: center;
+	padding-top: 30px;
+}
+
+#social-media{
+	width: 32px;
+	height:32px;
+}
+
+div.links{
+	padding-bottom: 20px;
+	padding-top: 40px;
+}
+
+#body {
+	padding-bottom: 180px;
+	text-align: center;
+}
+div.carousel{
+	width:300px;
+    height:200px;
+}
+
+div.copyright p{
+	text-align: center;
+}
+
+div.copyright{
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.officer-description p {
+	text-align: left;
+}
+div.officer-description-empty{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center !important;
+}
+#menu li {
+    display:inline;
+}
+#socialmedia{
+	float:center;
+	text-align: center;
+}
+#socialleft{
+	float: right;
+}
+#icons{
+	text-align: center;
+	padding-top: 30px;
+}
+.fa{	
+	color: white;
+	text-decoration: none;
+	padding-left: 15px;
+	padding-right: 15px;
 }
