@@ -6328,6 +6328,8 @@ button.close {
 
 .carousel {
   position: relative;
+  display: table;
+  margin: 0 auto;
 }
 
 .carousel-inner {
