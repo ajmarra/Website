@@ -6360,7 +6360,7 @@ button.close {
 }
 
 .carousel-inner > .active {
-  left: 0;
+  left: 8px;
 }
 
 .carousel-inner > .next,
