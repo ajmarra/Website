@@ -1,0 +1,81 @@
+.jumbotron {
+  padding-top: 0rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 80rem;
+}
+
+.album {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+
+.card {
+  float: left;
+  width: 33.33%;
+  min-width: 30rem;
+  min-height: 35rem;
+  padding: .75rem;
+  margin-bottom: 1rem;
+  border: 0;
+}
+
+.card > object > img {
+  max-width: 30rem;
+  max-height: 30rem;
+  width: auto;
+  height: auto;
+}
+
+.card > object {
+  width: 30rem;
+  height: 30rem;
+}
+
+.blok {
+  width: 30rem;
+  height: 25rem;
+}
+
+.blok > img {
+  max-width: 30rem;
+  max-height: 30rem;
+  width: auto;
+  height: auto;
+}
+
+.card-text {
+  font-size: 100%;
+  color: #333;
+}
+
+.fa-lightbulb-o {
+  color: #666;
+  font-size: 28rem;
+  width: 28rem;
+  height: 28rem;
+  text-align: center;
+  border:6px solid #666;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  -o-transition:.5s;
+  transition:.5s;
+}
+
+.fa-lightbulb-o:hover {
+  color:#222;
+  border-color: #222;
+}
