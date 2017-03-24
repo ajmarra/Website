@@ -159,6 +159,11 @@ div.officer-description-empty{
 	padding-bottom: 40px;
 	text-align: center !important;
 }
+div.roster{
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+	-moz-column-count: 3; /* Firefox */
+	column-count: 3;
+}
 #menu li {
     display:inline;
 }
